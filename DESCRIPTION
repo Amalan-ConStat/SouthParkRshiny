@@ -1,0 +1,31 @@
+Package: SouthParkRshiny
+Title: Data and 'Shiny' Application for the Tv Show 'SouthPark'
+Version: 1.0.0
+Authors@R: 
+    person("Amalan", "Mahendran", , "amalan0595@gmail.com", role = c("cre", "aut"))
+Description: Ratings, votes, swear words and sentiments are analysed for
+    the tv show 'SouthPark'.
+License: MIT + file LICENSE
+URL: 
+    https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
+BugReports: 
+    https://amalan-con-stat.shinyapps.io/SouthParkRshiny/issues
+Depends: 
+    R (>= 2.10)
+Imports: 
+    box,
+    bslib,
+    config (>= 0.3.2),
+    ggplot2,
+    ggpubr,
+    golem (>= 0.4.1),
+    kableExtra,
+    knitr,
+    shiny (>= 1.8.0),
+    shinydashboard
+Suggests: gridlayout
+Additional_repositories: https://amalan-constat.github.io/drat/
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.3.1
