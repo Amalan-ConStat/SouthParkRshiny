@@ -1,0 +1,12 @@
+name: SouthParkRshiny
+title: SouthParkRshiny
+username: amalan-con-stat
+account: amalan-con-stat
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11435434
+bundleId: 8347049
+url: https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
