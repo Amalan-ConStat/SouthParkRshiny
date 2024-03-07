@@ -27,7 +27,7 @@ run_app <- function(
     golem_opts = list(Southpark_Summary=SouthParkRshiny::Southpark_Summary,
                       SouthPark_IMDB_Data=SouthParkRshiny::SouthPark_IMDB_Data,
                       SouthPark_Script_Data=SouthParkRshiny::SouthPark_Script_Data,
-                      Word_Cloud_plots=SouthParkRshiny::Word_Cloud_plots,
+                      Basic_plots=SouthParkRshiny::Basic_plots,
                       Swear_Words_plots=SouthParkRshiny::Swear_Words_plots,
                       Sentiment_General_plots=SouthParkRshiny::Sentiment_General_plots,
                       Sentiment_Four_plots=SouthParkRshiny::Sentiment_Four_plots,

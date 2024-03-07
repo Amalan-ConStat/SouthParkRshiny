@@ -39,7 +39,7 @@ devtools::install_github("Amalan-ConStat/SouthParkRshiny")
 install.packages("SouthParkRshiny")
 ```
 
-Old SouthPark Rshiny application:[Here](https://github.com/Amalan-ConStat/SouthPark-Rshiny)
+Old SouthPark Rshiny application : [Here](https://github.com/Amalan-ConStat/SouthPark-Rshiny)
 
 ## What does this Rshiny App does ?
 

@@ -8,8 +8,7 @@ Description: Ratings, votes, swear words and sentiments are analysed for
 License: MIT + file LICENSE
 URL: 
     https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
-BugReports: 
-    https://amalan-con-stat.shinyapps.io/SouthParkRshiny/issues
+BugReports: https://amalan-con-stat.shinyapps.io/SouthParkRshiny/issues
 Depends: 
     R (>= 2.10)
 Imports: 
