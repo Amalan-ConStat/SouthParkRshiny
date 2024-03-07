@@ -1,10 +1,10 @@
 Package: SouthParkRshiny
-Title: Data and 'Shiny' Application for the Tv Show 'SouthPark'
+Title: Data and 'Shiny' Application for the Show 'SouthPark'
 Version: 1.0.0
 Authors@R: 
     person("Amalan", "Mahendran", , "amalan0595@gmail.com", role = c("cre", "aut"))
 Description: Ratings, votes, swear words and sentiments are analysed for
-    the tv show 'SouthPark'.
+    the show 'SouthPark'.
 License: MIT + file LICENSE
 URL: 
     https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
