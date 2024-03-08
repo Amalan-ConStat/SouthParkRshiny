@@ -6,9 +6,8 @@ Authors@R:
 Description: Ratings, votes, swear words and sentiments are analysed for
     the show 'SouthPark'.
 License: MIT + file LICENSE
-URL: 
-    https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
-BugReports: https://amalan-con-stat.shinyapps.io/SouthParkRshiny/issues
+URL: https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
+BugReports: https://github.com/Amalan-ConStat/SouthParkRshiny/issues
 Depends: 
     R (>= 2.10)
 Imports: 
