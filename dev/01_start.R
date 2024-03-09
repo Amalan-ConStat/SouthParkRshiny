@@ -21,7 +21,7 @@
 golem::fill_desc(
   pkg_name = "SouthParkRshiny", # The Name of the package containing the App
   pkg_title = "Data and 'Shiny' Application for the Tv Show 'SouthPark'", # The Title of the package containing the App
-  pkg_description = "Ratings, votes, swear words and sentiments are analysed for the tv show 'SouthPark'.", # The Description of the package containing the App
+  pkg_description = "Ratings, votes, swear words and sentiments are analysed for the show 'SouthPark' through a 'Shiny' application after web scraping from 'IMDB' and the website <https://southpark.fandom.com/wiki/South_Park_Archives>.", # The Description of the package containing the App
   author_first_name = "Amalan", # Your First Name
   author_last_name = "Mahendran", # Your Last Name
   author_email = "amalan0595@gmail.com", # Your Email

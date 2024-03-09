@@ -4,7 +4,8 @@ Version: 1.0.0
 Authors@R: 
     person("Amalan", "Mahendran", , "amalan0595@gmail.com", role = c("cre", "aut"))
 Description: Ratings, votes, swear words and sentiments are analysed for
-    the show 'SouthPark'.
+    the show 'SouthPark' through a 'Shiny' application after web scraping 
+    from 'IMDB' and the website <https://southpark.fandom.com/wiki/South_Park_Archives>.
 License: MIT + file LICENSE
 URL: https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
 BugReports: https://github.com/Amalan-ConStat/SouthParkRshiny/issues

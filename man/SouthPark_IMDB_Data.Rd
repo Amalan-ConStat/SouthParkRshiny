@@ -34,5 +34,6 @@ averagerating and number of votes.
 sort(unique(SouthPark_IMDB_Data$Season)) # the seasons of the show
 mean(SouthPark_IMDB_Data$AverageRating) # the average rating of the show
 sum(SouthPark_IMDB_Data$NumberOfVotes) # sum of the number of votes
+
 }
 \keyword{datasets}
