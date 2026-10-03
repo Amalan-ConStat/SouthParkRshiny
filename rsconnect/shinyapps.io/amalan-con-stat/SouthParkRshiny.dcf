@@ -5,6 +5,6 @@ account: amalan-con-stat
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11435434
-bundleId: 12641371
+bundleId: 12641497
 url: https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
 version: 1
