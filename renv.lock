@@ -28,41 +28,7 @@
       }
     ]
   },
-  "Bioconductor": {
-    "Version": "3.23"
-  },
   "Packages": {
-    "BiocManager": {
-      "Package": "BiocManager",
-      "Version": "1.30.27",
-      "Source": "Repository",
-      "Title": "Access the Bioconductor Project Package Repository",
-      "Description": "A convenient tool to install and update Bioconductor packages.",
-      "Authors@R": "c( person(\"Martin\", \"Morgan\", email = \"martin.morgan@roswellpark.org\", role = \"aut\", comment = c(ORCID = \"0000-0002-5874-8148\")), person(\"Marcel\", \"Ramos\", email = \"marcel.ramos@sph.cuny.edu\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-3242-0582\")))",
-      "Imports": [
-        "utils"
-      ],
-      "Suggests": [
-        "BiocVersion",
-        "BiocStyle",
-        "remotes",
-        "rmarkdown",
-        "testthat",
-        "withr",
-        "curl",
-        "knitr"
-      ],
-      "URL": "https://bioconductor.github.io/BiocManager/",
-      "BugReports": "https://github.com/Bioconductor/BiocManager/issues",
-      "VignetteBuilder": "knitr",
-      "License": "Artistic-2.0",
-      "Encoding": "UTF-8",
-      "RoxygenNote": "7.3.2",
-      "NeedsCompilation": "no",
-      "Author": "Martin Morgan [aut] (ORCID: <https://orcid.org/0000-0002-5874-8148>), Marcel Ramos [aut, cre] (ORCID: <https://orcid.org/0000-0002-3242-0582>)",
-      "Maintainer": "Marcel Ramos <marcel.ramos@sph.cuny.edu>",
-      "Repository": "CRAN"
-    },
     "Deriv": {
       "Package": "Deriv",
       "Version": "4.3.5",
@@ -486,44 +452,6 @@
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
       "Repository": "CRAN"
     },
-    "SouthParkRshiny": {
-      "Package": "SouthParkRshiny",
-      "Version": "1.0.0",
-      "Source": "Repository",
-      "Title": "Data and 'Shiny' Application for the Show 'SouthPark'",
-      "Authors@R": "person(\"Amalan\", \"Mahendran\", , \"amalan0595@gmail.com\", role = c(\"cre\", \"aut\"))",
-      "Description": "Ratings, votes, swear words and sentiments are analysed for the show 'SouthPark' through a 'Shiny' application after web scraping  from 'IMDB' and the website <https://southpark.fandom.com/wiki/South_Park_Archives>.",
-      "License": "MIT + file LICENSE",
-      "URL": "https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny/",
-      "BugReports": "https://github.com/Amalan-ConStat/SouthParkRshiny/issues",
-      "Depends": [
-        "R (>= 2.10)"
-      ],
-      "Imports": [
-        "box",
-        "bslib",
-        "config (>= 0.3.2)",
-        "ggplot2",
-        "ggpubr",
-        "golem (>= 0.4.1)",
-        "kableExtra",
-        "knitr",
-        "shiny (>= 1.8.0)",
-        "shinydashboard"
-      ],
-      "Suggests": [
-        "gridlayout"
-      ],
-      "Additional_repositories": "https://amalan-constat.github.io/drat/",
-      "Encoding": "UTF-8",
-      "LazyData": "true",
-      "LazyDataCompression": "xz",
-      "RoxygenNote": "7.3.1",
-      "NeedsCompilation": "no",
-      "Author": "Amalan Mahendran [cre, aut]",
-      "Maintainer": "Amalan Mahendran <amalan0595@gmail.com>",
-      "Repository": "CRAN"
-    },
     "SparseM": {
       "Package": "SparseM",
       "Version": "1.84-2",
@@ -689,36 +617,6 @@
       "Encoding": "UTF-8",
       "RoxygenNote": "7.3.3",
       "Author": "Michel Lang [cre, aut] (ORCID: <https://orcid.org/0000-0001-9754-0393>), Duncan Murdoch [aut], R Core Team [aut]",
-      "Repository": "CRAN"
-    },
-    "badger": {
-      "Package": "badger",
-      "Version": "0.2.5",
-      "Source": "Repository",
-      "Title": "Badge for R Package",
-      "Authors@R": "c( person(\"Guangchuang\", \"Yu\",          email = \"guangchuangyu@gmail.com\",    role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6485-8781\")), person(\"Gregor\", \"de Cillia\",        email = \"de.cillia.gregor@gmail.com\", role = \"ctb\"), person(\"Dirk\", \"Eddelbuettel\",       email = \"edd@debian.org\",             role = \"ctb\"), person(\"Maëlle\", \"Salmon\",                                                 role = \"ctb\"), person(\"Robrecht\", \"Cannoodt\",       email = \"rcannood@gmail.com\",         role = \"ctb\", comment = c(ORCID = \"0000-0003-3641-729X\", github = \"rcannood\")), person(\"Alexander\", \"Rossell Hayes\", email = \"alexander@rossellhayes.com\", role = \"ctb\", comment = c(ORCID = \"0000-0001-9412-0457\", github = \"rossellhayes\")), person(\"Waldir\", \"Leoncio\",          email = \"w.l.netto@medisin.uio.no\",   role = \"ctb\"), person(\"Matthew\", \"Schuelke\",        email = \"matt@themadstatter.com\",     role = \"ctb\", comment = c(ORCID = \"0000-0001-5755-1725\", github = \"the-mad-statter\")) )",
-      "Description": "Query information and generate badge for using in README and GitHub Pages.",
-      "Depends": [
-        "R (>= 3.3.0)"
-      ],
-      "Imports": [
-        "dlstats",
-        "rvcheck",
-        "desc",
-        "usethis (>= 2.0.0)"
-      ],
-      "Suggests": [
-        "testthat (>= 2.0.0)"
-      ],
-      "License": "Artistic-2.0",
-      "ByteCompile": "true",
-      "URL": "https://github.com/GuangchuangYu/badger",
-      "BugReports": "https://github.com/GuangchuangYu/badger/issues",
-      "Encoding": "UTF-8",
-      "RoxygenNote": "7.3.2",
-      "NeedsCompilation": "no",
-      "Author": "Guangchuang Yu [aut, cre] (ORCID: <https://orcid.org/0000-0002-6485-8781>), Gregor de Cillia [ctb], Dirk Eddelbuettel [ctb], Maëlle Salmon [ctb], Robrecht Cannoodt [ctb] (ORCID: <https://orcid.org/0000-0003-3641-729X>, github: rcannood), Alexander Rossell Hayes [ctb] (ORCID: <https://orcid.org/0000-0001-9412-0457>, github: rossellhayes), Waldir Leoncio [ctb], Matthew Schuelke [ctb] (ORCID: <https://orcid.org/0000-0001-5755-1725>, github: the-mad-statter)",
-      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
       "Repository": "CRAN"
     },
     "base64enc": {
@@ -1876,43 +1774,6 @@
       "NeedsCompilation": "yes",
       "Author": "Dirk Eddelbuettel [aut, cre] (ORCID: <https://orcid.org/0000-0001-6419-907X>), Antoine Lucas [ctb] (ORCID: <https://orcid.org/0000-0002-8059-9767>), Jarek Tuszynski [ctb], Henrik Bengtsson [ctb] (ORCID: <https://orcid.org/0000-0002-7579-5165>), Simon Urbanek [ctb] (ORCID: <https://orcid.org/0000-0003-2297-1732>), Mario Frasca [ctb], Bryan Lewis [ctb], Murray Stokely [ctb], Hannes Muehleisen [ctb] (ORCID: <https://orcid.org/0000-0001-8552-0029>), Duncan Murdoch [ctb], Jim Hester [ctb] (ORCID: <https://orcid.org/0000-0002-2739-7082>), Wush Wu [ctb] (ORCID: <https://orcid.org/0000-0001-5180-0567>), Qiang Kou [ctb] (ORCID: <https://orcid.org/0000-0001-6786-5453>), Thierry Onkelinx [ctb] (ORCID: <https://orcid.org/0000-0001-8804-4216>), Michel Lang [ctb] (ORCID: <https://orcid.org/0000-0001-9754-0393>), Viliam Simko [ctb], Kurt Hornik [ctb] (ORCID: <https://orcid.org/0000-0003-4198-9911>), Radford Neal [ctb] (ORCID: <https://orcid.org/0000-0002-2473-3407>), Kendon Bell [ctb] (ORCID: <https://orcid.org/0000-0002-9093-8312>), Matthew de Queljoe [ctb], Dmitry Selivanov [ctb] (ORCID: <https://orcid.org/0000-0003-0492-6647>), Ion Suruceanu [ctb] (ORCID: <https://orcid.org/0009-0005-6446-4909>), Bill Denney [ctb] (ORCID: <https://orcid.org/0000-0002-5759-428X>), Dirk Schumacher [ctb], András Svraka [ctb] (ORCID: <https://orcid.org/0009-0008-8480-1329>), Sergey Fedorov [ctb] (ORCID: <https://orcid.org/0000-0002-5970-7233>), Will Landau [ctb] (ORCID: <https://orcid.org/0000-0003-1878-3253>), Floris Vanderhaeghe [ctb] (ORCID: <https://orcid.org/0000-0002-6378-6229>), Kevin Tappe [ctb], Harris McGehee [ctb], Tim Mastny [ctb], Aaron Peikert [ctb] (ORCID: <https://orcid.org/0000-0001-7813-818X>), Mark van der Loo [ctb] (ORCID: <https://orcid.org/0000-0002-9807-4686>), Chris Muir [ctb] (ORCID: <https://orcid.org/0000-0003-2555-3878>), Moritz Beller [ctb] (ORCID: <https://orcid.org/0000-0003-4852-0526>), Sebastian Campbell [ctb] (ORCID: <https://orcid.org/0009-0000-5948-4503>), Winston Chang [ctb] (ORCID: <https://orcid.org/0000-0002-1576-2126>), Dean Attali [ctb] (ORCID: <https://orcid.org/0000-0002-5645-3493>), Michael Chirico [ctb] (ORCID: <https://orcid.org/0000-0003-0787-087X>), Kevin Ushey [ctb] (ORCID: <https://orcid.org/0000-0003-2880-7407>), Carl Pearson [ctb] (ORCID: <https://orcid.org/0000-0003-0701-7860>)",
       "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
-      "Repository": "CRAN"
-    },
-    "dlstats": {
-      "Package": "dlstats",
-      "Version": "0.1.8",
-      "Source": "Repository",
-      "Title": "Download Stats of R Packages",
-      "Authors@R": "c(person(given = \"Guangchuang\", family = \"Yu\", email = \"guangchuangyu@gmail.com\", role  = c(\"aut\", \"cre\")) )",
-      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
-      "Description": "Monthly download stats of 'CRAN' and 'Bioconductor' packages. Download stats of 'CRAN' packages is from the 'RStudio' 'CRAN mirror', see <https://cranlogs.r-pkg.org:443>. 'Bioconductor' package download stats is at <https://bioconductor.org/packages/stats/>.",
-      "Depends": [
-        "R (>= 3.3.0)"
-      ],
-      "Imports": [
-        "ggplot2",
-        "jsonlite",
-        "magrittr",
-        "RColorBrewer",
-        "scales",
-        "utils"
-      ],
-      "Suggests": [
-        "knitr",
-        "tidyr",
-        "DT",
-        "rmarkdown",
-        "prettydoc"
-      ],
-      "License": "Artistic-2.0",
-      "VignetteBuilder": "knitr",
-      "ByteCompile": "true",
-      "Encoding": "UTF-8",
-      "URL": "https://github.com/GuangchuangYu/dlstats",
-      "BugReports": "https://github.com/GuangchuangYu/dlstats/issues",
-      "Config/roxygen2/version": "8.0.0",
-      "NeedsCompilation": "no",
-      "Author": "Guangchuang Yu [aut, cre]",
       "Repository": "CRAN"
     },
     "doBy": {
@@ -6355,31 +6216,6 @@
       "Config/roxygen2/version": "8.0.0",
       "NeedsCompilation": "no",
       "Author": "Kevin Ushey [aut, cre], JJ Allaire [aut], Hadley Wickham [aut], Gary Ritchie [aut], RStudio [cph]",
-      "Repository": "CRAN"
-    },
-    "rvcheck": {
-      "Package": "rvcheck",
-      "Version": "0.2.1",
-      "Source": "Repository",
-      "Type": "Package",
-      "Title": "R/Package Version Check",
-      "Authors@R": "c(person(given = \"Guangchuang\", family = \"Yu\", email = \"guangchuangyu@gmail.com\", role  = c(\"aut\", \"cre\")), person(given = \"Chun-hui\", family = \"Gao\", email = \"gaospecial@gmail.com\", role = \"ctb\") )",
-      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
-      "Description": "Check latest release version of R and R package (both in 'CRAN', 'Bioconductor' or 'Github').",
-      "URL": "https://github.com/GuangchuangYu/rvcheck",
-      "Depends": [
-        "R (>= 3.4.0)"
-      ],
-      "Imports": [
-        "BiocManager",
-        "utils",
-        "yulab.utils"
-      ],
-      "License": "Artistic-2.0",
-      "Encoding": "UTF-8",
-      "RoxygenNote": "7.1.2",
-      "NeedsCompilation": "no",
-      "Author": "Guangchuang Yu [aut, cre], Chun-hui Gao [ctb]",
       "Repository": "CRAN"
     },
     "rversions": {

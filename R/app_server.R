@@ -15,6 +15,18 @@
 #' @noRd
 app_server <- function(input, output, session) {
 
+  # Resolve character images from the installed package
+  Special_Friends_Faces <- stats::setNames(
+    system.file("app", "www", "Images",c("Cartman.png", "Stan.png", "Kyle.png", "Kenny.png"),
+                package = "SouthParkRshiny", mustWork = TRUE),
+    c("Cartman", "Stan", "Kyle", "Kenny"))
+
+  Support_Characters_Faces <- stats::setNames(
+    system.file("app", "www", "Images",c("Liane.png", "Randy.png", "Sharon.png",
+                                         "Gerald.png", "Sheila.png", "Mr_Garrison.png"),
+                package = "SouthParkRshiny", mustWork = TRUE),
+    c("Liane", "Randy", "Sharon", "Gerald", "Sheila", "Mr. Garrison"))
+
   get_golem_options("Southpark_Summary")
   get_golem_options("SouthPark_IMDB_Data")
   get_golem_options("SouthPark_Script_Data")
@@ -58,6 +70,62 @@ app_server <- function(input, output, session) {
 
     stop("Expected a plot object or a list of plots.")
   }
+
+  Update_Network_Images <- function(p) {
+    Faces <- c(Special_Friends_Faces, Support_Characters_Faces)
+
+    if (all(c("name", "Image") %in% names(p$data))) {
+      p$data$Image <- unname(Faces[as.character(p$data$name)])
+    }
+
+    # Update layers that contain their own node data
+    for (i in seq_along(p$layers)) {
+      Layer_Data <- p$layers[[i]]$data
+
+      if (is.data.frame(Layer_Data) &&
+          all(c("name", "Image") %in% names(Layer_Data))) {
+        Layer_Data$Image <- unname(Faces[as.character(Layer_Data$name)])
+        p$layers[[i]]$data <- Layer_Data
+      }
+    }
+    p
+  }
+
+  Transition_Plots <- Update_Network_Images(Transition_Plots)
+  Cooccurrence_Plots <- Update_Network_Images(Cooccurrence_Plots)
+
+  Make_Face_Labels <- function(Faces) {
+    stats::setNames(
+      paste0("<img src='", Faces, "' width='30'/> ", names(Faces)),
+      names(Faces)
+    )
+  }
+
+  Special_Friends_Labels <- Make_Face_Labels(Special_Friends_Faces)
+  Support_Characters_Labels <- Make_Face_Labels(Support_Characters_Faces)
+
+  Update_Heatmap_Images <- function(p, Labels) {
+    Face_Scale <- ggplot2::scale_y_discrete(labels = Labels)
+    Face_Theme <- ggplot2::theme(axis.text.y = ggtext::element_markdown(size = 9, face = "bold",
+                                                                        colour = "red"))
+
+    if (inherits(p, "patchwork")) {
+      return((p & Face_Scale) & Face_Theme)
+    }
+
+    if (inherits(p, "ggplot")) {
+      return(p + Face_Scale + Face_Theme)
+    }
+
+    if (is.list(p)) {
+      return(lapply(p, Update_Heatmap_Images, Labels = Labels))
+    }
+
+    stop("Expected a ggplot, patchwork or list of plots.")
+  }
+
+  Friends_Sentiment_Plots <- Update_Heatmap_Images(Friends_Sentiment_Plots, Special_Friends_Labels)
+  Support_Sentiment_Plots <- Update_Heatmap_Images(Support_Sentiment_Plots, Support_Characters_Labels)
 
   # Your application server logic
   output$Summary_Table<-renderUI({
