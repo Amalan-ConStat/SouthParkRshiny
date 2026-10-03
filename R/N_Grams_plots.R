@@ -1,4 +1,4 @@
-#' N Grams plots
+#' N Grams Plots
 #'
 #' Three and four word phrases common among seasons, main characters and supporting characters
 #' are summarised through a plot here, from the script data.
@@ -14,6 +14,6 @@
 #' }
 #'
 #' @examples
-#' length(N_Grams_plots)
+#' length(N_Grams_Plots)
 #'
-"N_Grams_plots"
+"N_Grams_Plots"

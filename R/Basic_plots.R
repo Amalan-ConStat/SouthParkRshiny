@@ -1,4 +1,4 @@
-#' Basic plots
+#' Basic Plots
 #'
 #' Average rating and votes summarised in different ways.
 #'
@@ -10,6 +10,6 @@
 #' }
 #'
 #' @examples
-#' length(Basic_plots)
+#' length(Basic_Plots)
 #'
-"Basic_plots"
+"Basic_Plots"

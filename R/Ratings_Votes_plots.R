@@ -1,4 +1,4 @@
-#' Ratings Votes plots
+#' Ratings Votes Plots
 #'
 #' Detailed plots for ratings and votes from the IMDB data.
 #'
@@ -9,6 +9,6 @@
 #' }
 #'
 #' @examples
-#' length(Ratings_Votes_plots)
+#' length(Ratings_Votes_Plots)
 #'
-"Ratings_Votes_plots"
+"Ratings_Votes_Plots"

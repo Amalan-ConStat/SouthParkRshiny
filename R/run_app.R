@@ -25,14 +25,16 @@ run_app <- function(
     ),
     # golem_opts = list(...)
     golem_opts = list(Southpark_Summary=SouthParkRshiny::Southpark_Summary,
-                      SouthPark_IMDB_Data=SouthParkRshiny::SouthPark_IMDB_Data,
                       SouthPark_Script_Data=SouthParkRshiny::SouthPark_Script_Data,
-                      Basic_plots=SouthParkRshiny::Basic_plots,
-                      Swear_Words_plots=SouthParkRshiny::Swear_Words_plots,
-                      Sentiment_General_plots=SouthParkRshiny::Sentiment_General_plots,
-                      Sentiment_Four_plots=SouthParkRshiny::Sentiment_Four_plots,
-                      Sentiment_Support_plots=SouthParkRshiny::Sentiment_Support_plots,
-                      N_Grams_plots=SouthParkRshiny::N_Grams_plots,
-                      Ratings_Votes_plots=SouthParkRshiny::Ratings_Votes_plots)
+                      SouthPark_IMDB_Data=SouthParkRshiny::SouthPark_IMDB_Data,
+                      Ratings_Votes_Plots=SouthParkRshiny::Ratings_Votes_Plots,
+                      Basic_Plots=SouthParkRshiny::Basic_Plots,
+                      Swear_Words_Plots=SouthParkRshiny::Swear_Words_Plots,
+                      Sentiment_General_Plots=SouthParkRshiny::Sentiment_General_Plots,
+                      Friends_Sentiment_Plots=SouthParkRshiny::Friends_Sentiment_Plots,
+                      Support_Sentiment_Plots=SouthParkRshiny::Support_Sentiment_Plots,
+                      N_Grams_Plots=SouthParkRshiny::N_Grams_Plots,
+                      Transition_Plots=SouthParkRshiny::Transition_Plots,
+                      Cooccurrence_Plots=SouthParkRshiny::Cooccurrence_Plots)
   )
 }

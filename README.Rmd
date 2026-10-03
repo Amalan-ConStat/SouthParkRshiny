@@ -2,47 +2,95 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(collapse = TRUE,comment = "#>",fig.path = "man/figures/",
-                      out.width = "100%")
-library(badger)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
-# SouthParkRshiny <img src="man/figures/logo.png" align="right" alt="" width="150" />
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# SouthParkRshiny <img src="man/figures/logo.png" align="right" alt="SouthParkRshiny logo" width="150" />
 
 <!-- badges: start -->
-`r badge_cran_release("SouthParkRshiny")`
-[![packageversion](https://img.shields.io/badge/Package%20version-1.0.0-orange.svg?style=flat-square)](commits/main)
-`r badge_dependencies("SouthParkRshiny")`
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-`r badge_cran_download("SouthParkRshiny", "grand-total", "green")`
-`r badge_cran_download("SouthParkRshiny", "last-month", "green")`
-`r badge_cran_download("SouthParkRshiny", "last-week", "green")`
+[![CRAN version](https://www.r-pkg.org/badges/version/SouthParkRshiny)](https://cran.r-project.org/package=SouthParkRshiny)
+[![Package version](https://img.shields.io/badge/Package%20version-1.1.0-orange.svg?style=flat-square)](https://github.com/Amalan-ConStat/SouthParkRshiny)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-`r badge_repostatus("Active")`
-`r badge_lifecycle("stable")`
+[![Total downloads](https://cranlogs.r-pkg.org/badges/grand-total/SouthParkRshiny?color=green)](https://cran.r-project.org/package=SouthParkRshiny)
+[![Monthly downloads](https://cranlogs.r-pkg.org/badges/last-month/SouthParkRshiny?color=green)](https://cran.r-project.org/package=SouthParkRshiny)
+[![Weekly downloads](https://cranlogs.r-pkg.org/badges/last-week/SouthParkRshiny?color=green)](https://cran.r-project.org/package=SouthParkRshiny)
+
+[![Project status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![GitHub issues](https://img.shields.io/github/issues/Amalan-ConStat/SouthParkRshiny.svg?style=popout)](https://github.com/Amalan-ConStat/SouthParkRshiny/issues)
+[![Code size](https://img.shields.io/github/languages/code-size/Amalan-ConStat/SouthParkRshiny.svg)](https://github.com/Amalan-ConStat/SouthParkRshiny)
 
-`r badge_code_size("Amalan-ConStat/SouthParkRshiny")`
 <!-- badges: end -->
 
-## How to engage with "SouthParkRshiny" the first time ? 
+SouthParkRshiny provides data and a Shiny application for exploring
+*South Park*. Built using **golem**, the application brings together
+episode ratings, vote counts, dialogue, profanity, sentiment and
+character networks.
 
-```{r SouthParkRshiny from GitHub or CRAN,eval=FALSE}
-## Installing the package from GitHub
-devtools::install_github("Amalan-ConStat/SouthParkRshiny")
+## Installation
 
-## Installing the package from CRAN
+Install the released version from CRAN:
+
+```{r install-cran, eval=FALSE}
 install.packages("SouthParkRshiny")
 ```
 
-Old SouthPark Rshiny application : [Here](https://github.com/Amalan-ConStat/SouthPark-Rshiny)
+Alternatively, install the development version from GitHub:
 
-## What does this Rshiny App does ?
+```{r install-github, eval=FALSE}
+# install.packages("remotes")
+remotes::install_github("Amalan-ConStat/SouthParkRshiny")
+```
 
-* Script data of the tv show "SouthPark" is webscraped from "https://southpark.fandom.com/wiki/South_Park_Archives". 
-* Ratings and votes for the show are scraped from "IMDB" as per its instructions.
-* Analysis on ratings, votes, swear words and sentiments are summarised through plots.
+## Run the application
+
+```{r run-app, eval=FALSE}
+SouthParkRshiny::run_app()
+```
+
+## What does the application show?
+
+- **Basic information:** summaries of seasons, episodes, characters,
+  dialogue and profanity.
+- **Ratings and votes:** episode ratings and vote counts, highlighting
+  the highest and lowest values within each season.
+- **Sentiment analysis:** comparisons using the Bing, NRC and Loughran
+  dictionaries, including seasonal summaries and character heatmaps.
+- **Special phrases:** frequently used three-word and four-word phrases.
+- **Speaking transitions:** directed networks showing which characters
+  speak immediately after others.
+- **Episode co-occurrence:** networks showing how frequently characters
+  have dialogue in the same episodes, measured using Jaccard similarity.
+
+Character analyses include Cartman, Stan, Kyle and Kenny, alongside
+selected supporting characters: Liane, Randy, Sharon, Gerald, Sheila
+and Mr. Garrison.
+
+Sentiment results describe dictionary word matches. Speaking transitions
+and episode co-occurrence describe transcript patterns and do not
+necessarily indicate direct interaction between characters.
+
+## Data sources
+
+- Dialogue transcripts are collected from the
+  [South Park Archives](https://southpark.fandom.com/wiki/South_Park_Archives).
+- Episode information, ratings and vote counts are collected from IMDb.
+
+## Earlier application
+
+The earlier version is available in the
+[SouthPark-Rshiny repository](https://github.com/Amalan-ConStat/SouthPark-Rshiny).
+
+## Issues and suggestions
+
+Report bugs or suggest improvements through
+[GitHub Issues](https://github.com/Amalan-ConStat/SouthParkRshiny/issues).
+
+## License
+
+This package is distributed under the MIT license.

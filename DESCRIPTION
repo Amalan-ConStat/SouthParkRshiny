@@ -1,19 +1,17 @@
 Package: SouthParkRshiny
-Title: Data and 'Shiny' Application for the Show 'SouthPark'
-Version: 1.0.0
+Title: Data and 'Shiny' Application for the Tv Show 'SouthPark'
+Version: 1.1.0
 Authors@R: 
-    person("Amalan", "Mahendran", , "amalan0595@gmail.com", role = c("cre", "aut"))
-Description: Ratings, votes, swear words and sentiments are analysed for
-    the show 'SouthPark' through a 'Shiny' application after web scraping 
-    from 'IMDB' and the website <https://southpark.fandom.com/wiki/South_Park_Archives>.
+    person("Amalan", "Mahendran", role = c("aut", "cre") ,email = "amalan0595@gmail.com")
+Description: Ratings, votes, swear words and sentiments are analysed for the show 'SouthPark' through a 'Shiny' application after web scraping from 'IMDB' and the website <https://southpark.fandom.com/wiki/South_Park_Archives>.
 License: MIT + file LICENSE
 URL: https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny/
-BugReports: https://github.com/Amalan-ConStat/SouthParkRshiny/issues
+BugReports: https://github.com/Amalan-ConStat/SouthParkRshiny,https://amalan-con-stat.shinyapps.io/SouthParkRshiny//issues
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1.0)
 Imports: 
     box,
-    bslib,
+    bslib (>= 0.9.0),
     config (>= 0.3.2),
     ggplot2,
     ggpubr,
@@ -21,10 +19,14 @@ Imports:
     kableExtra,
     knitr,
     shiny (>= 1.8.0),
-    shinydashboard
+    shinydashboard,
+    patchwork,
+    ggimage,
+    ggraph,
+    ggtext
 Suggests: gridlayout
 Additional_repositories: https://amalan-constat.github.io/drat/
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
-RoxygenNote: 7.3.1
+Config/roxygen2/version: 8.1.0
